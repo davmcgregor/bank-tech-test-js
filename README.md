@@ -44,7 +44,7 @@ date || credit || debit || balance
 
 | Input                           | Output                                                           | 
 | ------------------------------- | ---------------------------------------------------------------  | 
-| New Account object              | PrintStatement should print "date || credit || debit || balance" |
+| New Account object              | PrintStatement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance" |
 | ------------------------------- | ---------------------------------------------------------------  | 
 | Account.desposit(1, 01/01/2020) | PrintStatement should print "date || credit || debit || balance  |
 |                                 | /n 01/01/2020 || 1.00 || || 1.00"                                |
