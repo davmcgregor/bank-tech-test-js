@@ -80,7 +80,7 @@ I would like to print an account statement containing transaction dates, amounts
 
 | Object:          | Account                                            | 
 | ---------------- | -------------------------------------------------- | 
-| **Attributes:**  | statement (date, credit, debit, balance), balance  |
+| **Properties:**  | statement, balance                                 |
 | **Function:**    | PrintStatement                                     |
 | **Function:**    | Deposit                                            |  
 | **Function:**    | Withdrawal                                         |  
