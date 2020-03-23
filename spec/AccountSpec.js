@@ -19,6 +19,12 @@ describe('Account', function() {
     expect(account.statement).toEqual([]);
   })
 
+  describe('#print_statement', function() {
+    it('prints the account statement', function() {
+      expect(account.print_statement()).toEqual("date || credit || debit || balance\n");
+    });
+  });
+
   describe('#deposit', function() {
     it('should increase the account balance', function() {
       account.deposit(1);

@@ -5,6 +5,10 @@
   }
 
   Account.prototype = {
+    print_statement: function(){
+      return "date || credit || debit || balance\n";
+    },
+
     deposit: function(amount){
       this.balance += amount;
     }
