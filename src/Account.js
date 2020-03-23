@@ -6,7 +6,7 @@
 
   Account.prototype = {
     print_statement: function(){
-      return "date || credit || debit || balance" + this.statement.join("\n");
+      return "date || credit || debit || balance" + this.statement.reverse().join("");
     },
 
     deposit: function(amount, date){

@@ -35,5 +35,12 @@ describe('Account', function() {
       account.deposit(1, "01/01/2020");
       expect(account.print_statement()).toEqual("date || credit || debit || balance\n01/01/2020 || 1.00 || || 1.00");
     });
+
+    it('should increase the account balance over multiple transations', function() {
+      account.deposit(1, "01/01/2020");
+      account.deposit(1, "02/01/2020");
+      expect(account.print_statement()).toEqual("date || credit || debit || balance\n02/01/2020 || 1.00 || || 2.00\n01/01/2020 || 1.00 || || 1.00");
+    });
+
   });
 })
