@@ -6,11 +6,12 @@
 
   Account.prototype = {
     print_statement: function(){
-      return "date || credit || debit || balance\n";
+      return "date || credit || debit || balance" + this.statement.join("\n");
     },
 
-    deposit: function(amount){
+    deposit: function(amount, date){
       this.balance += amount;
+      this.statement.push(`\n${date} || ${amount}.00 || || ${this.balance}.00`);
     }
   }
 
