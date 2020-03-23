@@ -6,17 +6,19 @@
 
   Account.prototype = {
     print_statement: function(){
-      return "date || credit || debit || balance" + this.statement.reverse().join("");
+      return "date      || credit  || debit   || balance" + this.statement.reverse().join("");
     },
 
-    deposit: function(amount, date){
+    deposit: function(amount){
+      date = new Date().toLocaleString().split(',')[0]
       this.balance += amount;
-      this.statement.push(`\n${date} || ${amount}.00 || || ${this.balance}.00`);
+      this.statement.push(`\n${date} || ${amount}.00 ||         || ${this.balance}.00`);
     },
 
-    withdraw: function(amount, date){
+    withdraw: function(amount){
+      date = new Date().toLocaleString().split(',')[0]
       this.balance -= amount;
-      this.statement.push(`\n${date} || || ${amount}.00 || ${this.balance}.00`);
+      this.statement.push(`\n${date} ||         || ${amount}.00 || ${this.balance}.00`);
     }
   }
 
