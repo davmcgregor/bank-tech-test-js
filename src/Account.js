@@ -12,6 +12,11 @@
     deposit: function(amount, date){
       this.balance += amount;
       this.statement.push(`\n${date} || ${amount}.00 || || ${this.balance}.00`);
+    },
+
+    withdraw: function(amount, date){
+      this.balance -= amount;
+      this.statement.push(`\n${date} || || ${amount}.00 || ${this.balance}.00`);
     }
   }
 
