@@ -62,18 +62,18 @@ date || credit || debit || balance
 
 ```
 As a user,
-So I can contirbute to my account,
+So I can add to my account,
 I would like to be able to make a deposit
 ```
 ```
 As a user,
-So I can obtain money from my account,
+So I can get money from my account,
 I would like to able to make a withdrawal
 ```
 ```
 As a user,
 To get details about my account,
-I would like to print an account statement containing transaction dates, amounts, balance
+I would like to print an account statement containing transaction dates, amounts, and balances
 ```
 
 ### Functions & Methods
@@ -81,9 +81,9 @@ I would like to print an account statement containing transaction dates, amounts
 | Object:          | Account                                            | 
 | ---------------- | -------------------------------------------------- | 
 | **Properties:**  | statement, balance                                 |
-| **Function:**    | PrintStatement                                     |
+| **Function:**    | Print_Statement                                     |
 | **Function:**    | Deposit                                            |  
-| **Function:**    | Withdrawal                                         |  
+| **Function:**    | Withdraw                                         |  
 
 ## <a name="Self-assessment">Self-assessment</a>
 
