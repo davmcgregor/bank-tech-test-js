@@ -8,5 +8,13 @@ describe ('TransactionSummary', function() {
     transaction_summary = new TransactionSummary();
   });
 
+  it('should be a defined object', function() {
+    expect(transaction_summary instanceof(TransactionSummary)).toBe(true);
+  });
+
+  it('should have a summary property', function() {
+    expect(transaction_summary.summary).toEqual([]);
+  });
+
 });
 
