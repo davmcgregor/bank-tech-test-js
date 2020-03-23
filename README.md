@@ -1,4 +1,12 @@
-# Bank tech test
+### [Makers Academy](http://www.makersacademy.com) - Week 10 tech test
+
+# Bank tech test 🏦
+
+#### Technologies: Javascript, Jasmine
+
+[Task](#Task) | [Specification](#Specification) | [User Stories](#User_Stories) | [Self-assessment](#Self-assessment)
+
+## <a name="Task">The Task</a>
 
 Today, you'll practice doing a tech test.
 
@@ -8,7 +16,7 @@ You'll get to practice your OO design and TDD skills.
 
 You'll work alone, and you'll also review your own code so you can practice reflecting on and improving your own work.
 
-## Specification
+## <a name="Specification">Specification</a>
 
 ### Requirements
 
@@ -32,7 +40,54 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
-## Self-assessment
+### Inputs / Outputs
+
+| Input                           | Output                                                           | 
+| ------------------------------- | ---------------------------------------------------------------  | 
+| New Account object              | PrintStatement should print "date || credit || debit || balance" |
+| ------------------------------- | ---------------------------------------------------------------  | 
+| Account.desposit(1, 01/01/2020) | PrintStatement should print "date || credit || debit || balance  |
+|                                 | /n 01/01/2020 || 1.00 || || 1.00"                                |
+| ------------------------------- | ---------------------------------------------------------------  | 
+| Account.desposit(1, 02/01/2020) | PrintStatement should print "date || credit || debit || balance  |
+|                                 |                              /n 02/01/2020 || 1.00 || || 2.00    |
+|                                 |                              /n 01/01/2020 || 1.00 || || 1.00"   |
+| ------------------------------- | ---------------------------------------------------------------  | 
+| Account.withdraw(1, 03/01/2020) | PrintStatement should print "date || credit || debit || balance  |
+|                                 |                              /n 03/01/2020 || || 1.00 || 1.00    | 
+|                                 |                              /n 02/01/2020 || 1.00 || || 2.00    |
+|                                 |                              /n 01/01/2020 || 1.00 || || 1.00"   |
+
+## <a name="User_Stories">User Stories</a>
+
+```
+As a user,
+So I can contirbute to my account,
+I would like to be able to make a deposit
+```
+```
+As a user,
+So I can obtain money from my account,
+I would like to able to make a withdrawal
+```
+```
+As a user,
+To get details about my account,
+I would like to print an account statement containing transaction dates, amounts, balance
+```
+
+### Functions & Methods
+
+For the user stories I created a domain model for each object, including attributes and behaviour:
+
+| Object:          | Account                                            | 
+| ---------------- | -------------------------------------------------- | 
+| **Attributes:**  | statement (date, credit, debit, balance), balance  |
+| **Function:**    | PrintStatement                                     |
+| **Function:**    | Deposit                                            |  
+| **Function:**    | Withdrawal                                         |  
+
+## <a name="Self-assessment">Self-assessment</a>
 
 Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
 
