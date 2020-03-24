@@ -6,6 +6,8 @@
 
 [Task](#Task) | [Specification](#Specification) | [User Stories](#User_Stories) | [Self-assessment](#Self-assessment)
 
+![screenshot](screenshot.png)
+
 ## <a name="Task">The Task</a>
 
 Today, you'll practice doing a tech test.
