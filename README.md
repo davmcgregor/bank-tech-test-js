@@ -4,7 +4,7 @@
 
 #### Technologies: Javascript, Jasmine
 
-[Task](#Task) | [Specification](#Specification) | [User Stories](#User_Stories) | [Self-assessment](#Self-assessment)
+[Task](#Task) | [Specification](#Specification) | [Testing](#Testing) | [User Stories](#User_Stories) | [Self-assessment](#Self-assessment)
 
 ![screenshot](screenshot.png)
 
@@ -59,6 +59,17 @@ date || credit || debit || balance
 |                                 |                              /n 23/03/2020 &#124;&#124; &#124;&#124; 1.00 &#124;&#124; 1.00    | 
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 2.00    |
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 1.00"   |
+
+## <a name="Testing">Testing</a>
+
+Tests were written with [Jasmine (3.5.0)](https://github.com/jasmine/jasmine/releases).
+
+To run the tests, clone the repo locally and run:
+
+```bash
+$> cd bank-tech-test-js
+$> open ./SpecRunner.html
+```
 
 ## <a name="User_Stories">User Stories</a>
 
