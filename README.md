@@ -84,25 +84,25 @@ I would like to print an account statement containing transaction dates, amounts
 | **Function:**    | Print_Statement                                    |
 | **Function:**    | Deposit                                            |  
 | **Function:**    | Withdraw                                           |  
-
+&nbsp;
 
 | Object:          | Statement                                          | 
 | ---------------- | -------------------------------------------------- | 
 | **Properties:**  | summary                                            |
 | **Function:**    | addTransaction                                     |
 | **Function:**    | display                                            |  
-
+&nbsp;
 
 | Object:          | TransactionSummary                                 | 
 | ---------------- | -------------------------------------------------- | 
 | **Properties:**  | transactions                                       |
 | **Function:**    | pushTransaction                                    |
-
+&nbsp;
 
 | Object:          | Transaction                                        | 
 | ---------------- | -------------------------------------------------- | 
 | **Properties:**  | amount, balance, date                              |
-
+&nbsp;
 
 ## <a name="Self-assessment">Self-assessment</a>
 
