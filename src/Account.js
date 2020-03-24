@@ -1,24 +1,22 @@
 (function(exports) {
-  function Account(balance = 0, statement = []) {
+  function Account(balance = 0, statement = new Statement()) {
     this.balance = balance;
     this.statement = statement;
   }
 
   Account.prototype = {
     print_statement: function(){
-      return "date      || credit  || debit   || balance" + this.statement.reverse().join("");
+      return this.statement.display();
     },
 
     deposit: function(amount){
-      date = new Date().toLocaleString().split(',')[0]
       this.balance += amount;
-      this.statement.push(`\n${date} || ${amount}.00 ||         || ${this.balance}.00`);
+      this.statement.addTransaction(amount, this.balance);
     },
 
     withdraw: function(amount){
-      date = new Date().toLocaleString().split(',')[0]
       this.balance -= amount;
-      this.statement.push(`\n${date} ||         || ${amount}.00 || ${this.balance}.00`);
+      this.statement.addTransaction(-amount, this.balance);
     }
   }
 

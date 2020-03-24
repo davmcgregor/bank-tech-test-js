@@ -1,14 +1,15 @@
 (function(exports) {
 
-  function TransactionSummary(summary = []) {
-    this.summary = summary;
+  function TransactionSummary(transactions = []) {
+    this.transactions = transactions;
   }
 
   TransactionSummary.prototype = {
-    addTransaction: function(amount, balance){
+    pushTransaction: function(amount, balance){
       var transaction = new Transaction(amount, balance);
-      this.transaction.push(transaction)
-    }
+      this.transactions.push(transaction)
+    },
+
   };
 
   exports.TransactionSummary = TransactionSummary;
