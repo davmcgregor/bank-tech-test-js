@@ -70,6 +70,7 @@ To run the tests, clone the repo locally and run:
 $> cd bank-tech-test-js
 $> open ./SpecRunner.html
 ```
+![jasmine](jasmine.png)
 
 ## <a name="User_Stories">User Stories</a>
 
