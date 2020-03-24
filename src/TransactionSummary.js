@@ -1,3 +1,5 @@
+import { Transaction } from './Transaction.js';
+
 (function(exports) {
 
   function TransactionSummary(transactions = []) {

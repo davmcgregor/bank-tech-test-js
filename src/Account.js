@@ -1,3 +1,5 @@
+import { Statement } from './Statement.js';
+
 (function(exports) {
   function Account(balance = 0, statement = new Statement()) {
     this.balance = balance;

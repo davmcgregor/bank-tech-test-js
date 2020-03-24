@@ -1,3 +1,5 @@
+import { TransactionSummary } from './TransactionSummary.js';
+
 (function(exports) {
 
   function Statement(summary = new TransactionSummary()) {
