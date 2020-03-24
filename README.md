@@ -44,16 +44,16 @@ date || credit || debit || balance
 
 | Input                           | Output                                                         | 
 | ------------------------------- | ------------------------------------------------------------   | 
-| New Account object              | PrintStatement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance" |
+| New Account object              | print_statement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance" |
 | ------------------------------- | ------------------------------------------------------------  | 
-| Account.desposit(1)             | PrintStatement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
+| Account.desposit(1)             | print_statement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
 |                                 | /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 1.00"                                |
 | ------------------------------- | ------------------------------------------------------------   | 
-| Account.desposit(1)             | PrintStatement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
+| Account.desposit(1)             | print_statement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 2.00    |
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 1.00"   |
 | ------------------------------- | ------------------------------------------------------------   | 
-| Account.withdraw(1)             | PrintStatement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
+| Account.withdraw(1)             | print_statement should print "date &#124;&#124; credit &#124;&#124; debit &#124;&#124; balance  |
 |                                 |                              /n 23/03/2020 &#124;&#124; &#124;&#124; 1.00 &#124;&#124; 1.00    | 
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 2.00    |
 |                                 |                              /n 23/03/2020 &#124;&#124; 1.00 &#124;&#124; &#124;&#124; 1.00"   |
@@ -76,7 +76,7 @@ To get details about my account,
 I would like to print an account statement containing transaction dates, amounts, and balances
 ```
 
-### Functions & Methods
+### Objects & Functions
 
 | Object:          | Account                                            | 
 | ---------------- | -------------------------------------------------- | 
@@ -84,7 +84,7 @@ I would like to print an account statement containing transaction dates, amounts
 | **Function:**    | Print_Statement                                    |
 | **Function:**    | Deposit                                            |  
 | **Function:**    | Withdraw                                           | 
- 
+
 &nbsp;
 
 | Object:          | Statement                                          | 
